@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.root {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 233, 233);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.wrapApplication {
+  margin: 0 auto;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.wrapPanel {
+  width: 100%;
+}
+
+.wrapPanel .MuiBox-root {
+  padding-top: 0px;
+}
+
+.tableStyle {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 2em 0;
+  display: table;
+  border: 1px solid rgb(194, 194, 202);
+}
+
+.tableStyle th, td {
+  padding: 1em;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tableStyle th:first-child, .tableStyle td:first-child {
+  padding-left: 1em;
+}
+
+.tableStyle tr {
+  border-bottom: 1px solid rgb(163, 164, 192);
+}
+
+.tableStyle thead tr:first-child {
+  background-color: #5a5a5a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tableStyle tr:nth-child(2n+1) {
+  background-color: #f1f7fc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableStyle tr:nth-child(2n) {
+  background-color: #dee5ec;
 }
