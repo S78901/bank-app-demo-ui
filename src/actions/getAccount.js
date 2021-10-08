@@ -16,8 +16,9 @@ function useGetAccount() {
     if(accountData[0]?.accountNumber === "") {
 
         // Fetch the data from the endpoint using Axios
-        console.log("Fetching...")
+        // console.log("Fetching...")
         axios.get(url).then((data) => {
+            // console.log(data.data);
             // Dispatch the data to our store using the 'LOAD_ACCOUNTS' action for the accounts reducer
             dispatch({
                 type: ACTIONS.LOAD_ACCOUNTS,

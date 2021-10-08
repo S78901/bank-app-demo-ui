@@ -161,10 +161,10 @@ function TransferModal({ open, onClose}) {
                     Please select the bank account you would like to transfer from, the account you would like to transfer to, and then enter the amount.
                 </DialogContentText>
                 <FormControl sx={{ my: 3, minWidth: '100%' }}>
-                    <InputLabel id="demo-simple-select-helper-label">From Account...</InputLabel>
+                    <InputLabel id="from-account-helper-label">From Account...</InputLabel>
                         <Select
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
+                        labelId="from-account-label"
+                        // id="from-account"
                         value={accountFrom}
                         label="From Account..."
                         onChange={handleChangeSelect1}
@@ -184,10 +184,10 @@ function TransferModal({ open, onClose}) {
                     <p>Please select an account to transfer from...</p>
                 ) : (
                     <FormControl sx={{ my: 2, minWidth: '100%' }}>
-                        <InputLabel id="demo-simple-select-helper-label">To Account...</InputLabel>
+                        <InputLabel id="to-account-helper-label">To Account...</InputLabel>
                             <Select
-                            labelId="demo-simple-select-helper-label"
-                            id="demo-simple-select-helper"
+                            labelId="to-account-label"
+                            id="to-account"
                             value={accountTo}
                             label="To Account..."
                             onChange={handleChangeSelect2}

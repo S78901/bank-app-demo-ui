@@ -17,6 +17,9 @@ function Accounts() {
         setValue(newValue);
     };
 
+    // console.log("This is the accountData:")
+    // console.log(accountData)
+
     useEffect(() => {
         if(!initialRender.current) {
             if(accountData[0]?.accountNumber === "") {
@@ -108,7 +111,7 @@ function Accounts() {
 
                                             let convertedTimeFromISOString = moment(timestamp).format('MM/DD/YYYY h:mm:ss a')
                                             return (
-                                                <tr key={i}>
+                                                <tr key={i} data-testid="tr-transactions">
                                                     <td>{convertedTimeFromISOString}</td>
                                                     <td>{action}</td>
                                                     <td>{description}</td>

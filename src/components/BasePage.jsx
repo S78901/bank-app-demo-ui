@@ -13,6 +13,7 @@ import Zoom from '@mui/material/Zoom';
 import Accounts from './Accounts';
 import TransferModal from './TransferModal';
 
+// Some standard MUI template theming. Enables scroll to top button
 function ScrollTop(props) {
   const { children, window } = props;
 
@@ -48,6 +49,7 @@ function ScrollTop(props) {
   );
 }
 
+// This is our base page layout for the banking demo app.
 function BasePage(props) {
     const [open, setOpen] = useState(false);
 

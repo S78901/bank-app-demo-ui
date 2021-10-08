@@ -34,5 +34,13 @@ npm test
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+You can also run:
+
+```bash
+npm run test:coverage
+```
+
+This allows you to see a table of the generated coverage the tests provide for the application.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
